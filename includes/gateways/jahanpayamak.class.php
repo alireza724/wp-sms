@@ -55,6 +55,16 @@ class jahanpayamak extends WP_SMS {
 			$this->api = 22;
 		} else if ( substr( $this->from, 0, 4 ) == '3000' ) {
 			$this->api = 13;
+		} else if ( substr( $this->from, 0, 5 ) == '50004' ) {
+			$this->api = 44;
+		} else if ( substr( $this->from, 0, 5 ) == '50005' ) {
+			$this->api = 15;
+		} else if ( substr( $this->from, 0, 5 ) == '50001' ) {
+			$this->api = 51;
+		} else if ( substr( $this->from, 0, 3 ) == '021' ) {
+			$this->api = 198;
+		} else if ( substr( $this->from, 0, 3 ) == '123' ) {
+			$this->api = 9;
 		}
 
 		try {
